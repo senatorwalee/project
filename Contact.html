@@ -6,17 +6,63 @@
     <title>Contact us</title>
 </head>
 <body>
-    <header><h2>Get in Touch</h2></header>
-    Visit us @ <a href="http://googlemaps.com">37 Grampian Cresent</a> <br>
-    Email us @ <a href="mailto:tijaniolawale99@gmail.com">tijaniolawale99@gmail.com</a><br>
-    Call us @ <a href="tell:647-572-3484">Call 647-572-3484</a><br>
-    Text us @ <a href="sms:6475723484">Text 647-572-3484</a><br>
-    <img src="./Screenshot 2023-10-20 at 4.04.50 PM.png" alt="abc" width="100px" height="100px">
-    
-    <form>
-        
+    <div id="wrapper">
 
-    </form>
+    <header><h2 style="text-align: center; "background-color: rgb(172, 126, 212);><i>WELCOME TO TJs FITNESS PERSONAL TRAINING</i></h2></header>
+        <header style="text-align: center;"><i>GET IN TOUCH</i></header>
+       
+        <nav style="text-align: center;">
+            <a href = "Mainpage.html">Home</a>
+            <a href = "Contact.html">Contact</a>
+            <a href = "Pricing.html">Pricing</a>
+            <a href = "Coachtj.html">Meet the coach</a>
+            <a href = "Signin.html">Member SignIn</a>
+        </nav><br><br>
+        <picture><img src="phonelogo.png"></picture>
+        <picture><img src="emaillogo.jpeg"></picture>
+        <picture><img src="locationlogo.png"></picture><br><br>
+        <main style="padding-bottom: 100px;">
+            <div>
+                <span>Visit us @ <a href="http://googlemaps.com">37 Grampian Cresent<br></a></span>
+                <span> Email us @ <a href="mailto:tijaniolawale99@gmail.com">tijaniolawale99@gmail.com</a></span><br>
+                <span>Call us @ <a href="tell:647-572-3484">Call 647-572-3484</a></span><br>
+                <span>Text us @ <a href="sms:6475723484">Text 647-572-3484</a></span><br>
+            </div><br><br>
+            <form>
+            <strong><label for="gender">Gender</label></strong>
+                <select name="gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
+                <div>
+                   <strong> <label for="weight">Your Weight in LB</label></strong><br>
+                   <input type="range" name="weight" id="weight" value="1" min="1" max="500" oninput="weightOutputId.value = `${weight.value} lbs`">
+                   <output id="weightOutputId">1 lbs</output>
+                
+                </div><br>
+                <div>
+                    <strong><label for="Name">Name</label></strong>
+                    <input type="text">
+                </div>
+                <div>
+                   <strong><label for="Email">Email</label></strong> 
+                    <input type="email">
+                </div>
+                <div>
+                    <strong><label for="userInfo">Tell us about your goal</label></strong>
+                    <textarea name="userInfo" id="" cols="30" rows="10" style="display: block;">Enter Text Here</textarea>
+                </div>
+                <input type="submit">
+            </form>
+            
+        </main>
+        <footer style="background-color:dimgray;text-align: center;"> 
+            <i>Copyright &copy; 2023 Tjs Fitness<br>
+                <a href="mailto:">  Olawale@Tijani.com</a> </i>
+        </footer>
+    </div>
+    
     
 </body>
 </html>
